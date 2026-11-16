@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>D·FIT Fuerza Real · Entrenamiento de fuerza para mujeres en Getafe</title>
+<meta name="description" content="Entrenamiento personal y en grupos reducidos para mujeres en Getafe con Dana. Recomposición corporal, fuerza, embarazo, posparto y recuperación de lesiones.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#17181b; --bg2:#1f2024; --card:#26272c; --line:#3a3b41;
+  --fg:#efe9e4; --muted:#a8a29d; --copper:#c99a82; --copper-2:#e2b8a2; --ink:#17181b;
+  --display:"Cormorant Garamond","Times New Roman",serif;
+  --body:"Manrope",system-ui,-apple-system,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6;margin:0}
+a{color:inherit}
+.wrap{max-width:1000px;margin:0 auto;padding-inline:max(18px,env(safe-area-inset-left,0px))}
+.band{padding-block:64px}
+.band.alt{background:var(--bg2)}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.08;margin:0;text-wrap:balance}
+h2{font-size:clamp(2rem,5vw,2.8rem)}
+.eyebrow{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--copper);font-weight:600;margin:0 0 10px}
+.lead{color:var(--muted);max-width:60ch}
+.btn{display:inline-flex;align-items:center;padding:14px 22px;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid var(--copper)}
+.btn.solid{background:var(--copper);color:var(--ink)}
+.btn.solid:hover{background:var(--copper-2)}
+.btn.ghost{color:var(--fg)}
+.btn.ghost:hover{background:var(--card)}
+.btn:focus-visible{outline:2px solid var(--copper-2);outline-offset:3px}
+.demo-flag{background:var(--copper);color:var(--ink);text-align:center;font-size:.78rem;font-weight:600;padding:6px 16px}
+
+/* nav */
+header{position:sticky;top:0;z-index:20;background:rgba(23,24,27,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.logo{text-decoration:none}
+.logo b{font-family:var(--display);font-weight:400;font-size:1.6rem;letter-spacing:.04em;display:block;line-height:1}
+.logo small{font-size:.55rem;letter-spacing:.3em;color:var(--copper);text-transform:uppercase}
+.links{display:flex;gap:22px;font-size:.88rem;color:var(--muted)}
+.links a{text-decoration:none}.links a:hover{color:var(--fg)}
+@media (max-width:720px){.links{display:none}}
+
+/* hero */
+.hero{padding-block:72px 80px}
+.hero h1{font-size:clamp(2.6rem,7vw,4.8rem);max-width:16ch}
+.hero h1 em{color:var(--copper)}
+.hero .lead{font-size:1.1rem;margin-top:20px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+
+/* entrenamientos */
+.programs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
+.prog{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.prog h3{font-size:1.5rem;margin-bottom:6px}
+.prog p{color:var(--muted);margin:0;font-size:.94rem}
+@media (max-width:820px){.programs{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.programs{grid-template-columns:1fr}}
+
+/* dana */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:44px;align-items:center}
+.portrait{aspect-ratio:4/5;border-radius:20px;background:radial-gradient(circle at 30% 25%,rgba(201,154,130,.35),transparent 55%),linear-gradient(160deg,#2b2c31,#1b1c20);border:1px solid var(--line);display:flex;align-items:flex-end;padding:20px;color:var(--muted);font-size:.8rem}
+.about ul{margin:20px 0 0;padding-left:18px;color:var(--muted)}
+.about li{margin-bottom:6px}
+@media (max-width:760px){.about{grid-template-columns:1fr}.portrait{max-width:360px}}
+
+/* contacto */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.info{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;display:grid;gap:16px}
+.row span{display:block;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--copper)}
+.row a,.row p{margin:0;text-decoration:none;font-size:1.05rem}
+.row a:hover{color:var(--copper-2)}
+@media (max-width:760px){.contact{grid-template-columns:1fr}}
+
+footer{border-top:1px solid var(--line);padding-block:28px;color:var(--muted);font-size:.85rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+</style>
+</head>
+<body>
+
+<div class="demo-flag">Propuesta de diseño · Demo preparada por Auvisa Studio para D·FIT Getafe</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="D·FIT inicio"><b>D·FIT</b><small>Fuerza real by Dana</small></a>
+    <nav class="links" aria-label="Secciones">
+      <a href="#entrenamientos">Entrenamientos</a><a href="#dana">Dana</a><a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn solid" href="#contacto" style="padding:10px 18px">Contactar</a>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <p class="eyebrow">Entrenamiento de fuerza para mujeres · Getafe</p>
+    <h1>La fuerza se mide en <em>confianza.</em></h1>
+    <p class="lead">Entrenamiento personal y en grupos reducidos con Dana, especialista en recomposición corporal y nutrición deportiva.</p>
+    <div class="cta-row">
+      <a class="btn solid" href="#contacto">Contactar</a>
+      <a class="btn ghost" href="#entrenamientos">Ver entrenamientos</a>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="entrenamientos">
+  <div class="wrap">
+    <p class="eyebrow">Entrenamientos</p>
+    <h2>Qué puedes entrenar con nosotras</h2>
+    <div class="programs">
+      <article class="prog"><h3>Recomposición corporal</h3><p>Fuerza y nutrición para perder grasa sin perder músculo.</p></article>
+      <article class="prog"><h3>Funcional</h3><p>Movimientos del día a día con buena técnica.</p></article>
+      <article class="prog"><h3>Hipertrofia</h3><p>Progresión de cargas para ganar músculo.</p></article>
+      <article class="prog"><h3>Recuperación de lesiones</h3><p>Vuelve a entrenar con seguridad.</p></article>
+      <article class="prog"><h3>Embarazo</h3><p>Fuerza adaptada a cada trimestre.</p></article>
+      <article class="prog"><h3>Posparto</h3><p>Recupera core, suelo pélvico y fuerza.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="dana">
+  <div class="wrap about">
+    <div class="portrait">Aquí irá una foto real de Dana</div>
+    <div>
+      <p class="eyebrow">Quién está detrás</p>
+      <h2>Soy Dana. Entreno a mujeres reales.</h2>
+      <p class="lead" style="margin-top:16px">Creé D·FIT para que entrenar fuerza deje de dar miedo: técnica, acompañamiento y un plan pensado para tu vida.</p>
+      <ul>
+        <li>Grupos reducidos y entrenamiento personal</li>
+        <li>Plan a tu medida, con nutrición incluida</li>
+        <li>Horarios flexibles</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="contacto">
+  <div class="wrap contact">
+    <div>
+      <p class="eyebrow">Contacto</p>
+      <h2>Empieza hoy</h2>
+      <p class="lead" style="margin-top:16px">Escríbenos y te contamos cómo empezar.</p>
+      <p class="lead"><strong style="color:var(--fg)">¿Ya eres clienta?</strong> Reserva tus clases desde la app de D·FIT.</p>
+      <div class="cta-row">
+        <a class="btn solid" href="mailto:coach@d-fitcenter.com">Enviar un email</a>
+      </div>
+    </div>
+    <div class="info">
+      <div class="row"><span>Dirección</span><a href="https://www.google.com/maps/search/?api=1&query=C%2F%20Guanabacoa%2010%2C%20Getafe" target="_blank" rel="noopener">C/ Guanabacoa 10, Getafe (Madrid)</a></div>
+      <div class="row"><span>Email</span><a href="mailto:coach@d-fitcenter.com">coach@d-fitcenter.com</a></div>
+      <div class="row"><span>Instagram</span><a href="https://www.instagram.com/dfit.getafe/" target="_blank" rel="noopener">@dfit.getafe</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© D·FIT · Fuerza real by Dana · Getafe</div>
+    <div>Web diseñada por Auvisa Studio</div>
+  </div>
+</footer>
+
+
+</body>
+</html>
